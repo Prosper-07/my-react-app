@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white text-gray-900 px-4 py-2 shadow-xl fixed w-full z-10">
+    <nav className="bg-white text-gray-900 px-4 py-4 shadow-xl fixed w-full z-10">
       <div className="flex justify-between items-center">
         {/* Logo / Heading */}
         <h2 className="text-3xl font-bold font-serif">GHOST!</h2>
@@ -43,12 +43,12 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden sm:flex gap-6 items-center">
+        <ul className="hidden sm:flex gap-6 items-center font-bold">
           <li className="cursor-pointer hover:text-purple-600">Featured</li>
           <li className="cursor-pointer hover:text-purple-600">Why Evoryte</li>
           <li className="cursor-pointer hover:text-purple-600">Testimonials</li>
           <li className="cursor-pointer hover:text-purple-600">Contact</li>
-          <button className="bg-gradient-to-l from-purple-200 via-purple-400 to-purple-500 rounded-xl px-4 py-2 hover:from-purple-400 hover:to-purple-200 transition ml-[280px]">
+          <button className="bg-gradient-to-l from-purple-200 via-purple-400 to-purple-500 rounded-xl px-4 py-2 hover:from-purple-400 hover:to-purple-200 hover:underline transition ml-[280px]">
             Send Message
           </button>
         </ul>
